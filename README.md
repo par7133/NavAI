@@ -1,2 +1,2 @@
 # NavAI
-Everyone it navagation AI - MIT
+Everyone its navagation AI - MIT
