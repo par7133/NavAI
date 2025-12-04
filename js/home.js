@@ -55,7 +55,14 @@ function NAVAIsetContentPos() {
     myheight = parseInt(window.innerHeight - ($("#NAVAIheader").height()));
     $("#NAVAIsidebar").css("height", myheight+"px");
     $("#NAVAIcoding").css("height", myheight+"px");
-
+    if (parseInt($("#NAVAIcoding").height()) < 850) {
+      $("#NAVAIcoding").css("height", "850px");
+    }
+    $("#NAVAIcontent").css("height", myheight+"px");
+    if (parseInt($("#NAVAIcontent").height()) < 850) {
+      $("#NAVAIcontent").css("height", "850px");
+    }
+   
     $("#NAVAIresizeBanner").hide();
     $("#NAVAIcontent").show(); 
   } else {
